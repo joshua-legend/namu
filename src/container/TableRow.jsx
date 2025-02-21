@@ -2,12 +2,12 @@ import TableData from "../components/TableData";
 import TableHeader from "../components/TableHeader";
 
 const TableRow = (props) => {
-  const { header, data } = props;
+  const { header, tableData } = props;
 
   return (
     <tr>
       <TableHeader {...header} />
-      <TableData data={data} />
+      <TableData {...tableData} />
     </tr>
   );
 };
